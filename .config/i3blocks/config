@@ -1,0 +1,67 @@
+[Ram]
+command=~/.config/i3blocks/Blocks/mem.sh -m
+interval=10
+color=#FF6600
+
+[Swap]
+command=~/.config/i3blocks/Blocks/mem.sh -s
+interval=10
+color=#6699FF
+
+[MPD]
+command=~/.config/i3blocks/Blocks/mpd.sh
+interval=5
+color=#66CCFF
+
+[Cpu]
+command=~/.config/i3blocks/Blocks/cpu.sh
+interval=5
+color=#FFFF66
+
+[Disk]
+command=~/.config/i3blocks/Blocks/disk.sh /
+interval=60
+color=#CC6699
+
+[Key]
+command=~/.config/i3blocks/Blocks/key_l.sh
+interval=once
+color=#33ff33
+
+[Ether]
+command=~/.config/i3blocks/Blocks/net.sh -e
+interval=10
+color=#CC99FF
+
+[Ether]
+command=~/.config/i3blocks/Blocks/net.sh -w
+interval=10
+color=#CC99FF
+
+[Update]
+command=~/.config/i3blocks/Blocks/update.sh
+interval=600
+color=#FFCC99
+
+[Long]
+command=~/.config/i3blocks/Blocks/long.sh
+interval=600
+color=#FFFF99
+
+[Vol]
+command=~/.config/i3blocks/Blocks/Vol.sh
+interval=3
+color=#9933FF
+
+[Bat]
+command=~/.config/i3blocks/Blocks/bat.sh
+interval=2
+color=#CC0099
+
+
+[Time]
+command=~/.config/i3blocks/Blocks/date.sh
+interval=1
+color=#6699FF
+
+
