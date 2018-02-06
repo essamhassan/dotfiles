@@ -86,7 +86,7 @@ source $ZSH/oh-my-zsh.sh
 alias aur="yaourt"
 alias music="ncmpcpp"
 alias files="ranger"
-alias wifiscan="iwlist wlp3s0 scan >> /dev/null"
+alias wifiscan="sudo iwlist wlp3s0 scan &> /dev/null"
 alias lswifi="nmcli dev wifi list"
 alias wificonnect="nmcli device wifi connect"
 
