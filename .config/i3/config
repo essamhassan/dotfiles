@@ -219,7 +219,11 @@ bar {
     position top
     font pango:monospace 9
   	#tray_output none
-    status_command bumblebee-status -m nic disk:root cpu memory battery date time pasink pasource caffeine mpd -p root.path=/ time.format="%r" date.format="%a, %b %d %Y" -t gruvbox-powerline
+    status_command bumblebee-status -m nic cpu memory battery date time pasink pasource caffeine mpd -p root.path=/ time.format="%r" date.format="%a, %b %d %Y" -t gruvbox-powerline
     #status_command i3blocks -c $HOME/.config/i3blocks/config
 }
 
+#bar {
+#  position bottom
+#  status_command i3status
+#}

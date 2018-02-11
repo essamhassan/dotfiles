@@ -89,7 +89,8 @@ alias files="ranger"
 alias wifiscan="sudo iwlist wlp3s0 scan &> /dev/null"
 alias lswifi="nmcli dev wifi list"
 alias wificonnect="nmcli device wifi connect"
-
+alias pdf="zathura"
+alias watch="mplayer"
 
 # Work aliases
 alias kprod="kubectl --namespace=production"
@@ -100,7 +101,6 @@ alias kstaging="kubectl --namespace=staging"
 
 source /usr/share/nvm/init-nvm.sh
 export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
 eval "$(rbenv init -)"
 export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 
