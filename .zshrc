@@ -107,3 +107,4 @@ export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 # archey
 #neofetch
 alias config='/usr/bin/git --git-dir=/home/essamhassan/.cfg/ --work-tree=/home/essamhassan'
+neofetch
