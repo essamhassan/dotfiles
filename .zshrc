@@ -91,6 +91,7 @@ alias lswifi="nmcli dev wifi list"
 alias wificonnect="nmcli device wifi connect"
 alias pdf="zathura"
 alias watch="mplayer"
+alias i3cheatsheet='egrep ^bind .config/i3/config | cut -d '\'' '\'' -f 2- | sed '\''s/ /\t/'\'' | column -ts $'\''\t'\'' | pr -2 -w 145 -t | less'
 
 # Work aliases
 alias kprod="kubectl --namespace=production"
