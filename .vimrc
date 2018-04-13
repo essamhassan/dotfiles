@@ -55,6 +55,7 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'ryanoasis/vim-devicons'
 Plug 'chriskempson/base16-vim'
 Plug 'gabrielsimoes/cfparser.vim'
+Plug 'Valloric/YouCompleteMe'
 
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
@@ -762,7 +763,7 @@ let g:ycm_server_python_interpreter = '/usr/bin/python2'
 let g:ycm_global_ycm_extra_conf = '/usr/share/vim/vimfiles/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
-let g:ycm_min_num_of_chars_for_completion = 1
+let g:ycm_min_num_of_chars_for_completion = 2
 
 " Ultasnips
 let g:UltiSnipsExpandTrigger="<Tab>"
