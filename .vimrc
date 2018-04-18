@@ -56,7 +56,10 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'chriskempson/base16-vim'
 Plug 'gabrielsimoes/cfparser.vim'
 Plug 'Valloric/YouCompleteMe'
-
+Plug 'scrooloose/nerdcommenter'
+Plug 'arcticicestudio/nord-vim'
+Plug 'simeji/winresizer'
+Plug 'roman/golden-ratio'
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 else
@@ -221,7 +224,7 @@ set number
 
 let no_buffers_menu=1
 if !exists('g:not_finish_vimplug') 
-    colorscheme molokai_dark
+    colorscheme onedark
 endif
 
 set mousemodel=popup
@@ -289,7 +292,7 @@ if exists("*fugitive#statusline")
 endif
 
 " vim-airline
-let g:airline_theme = 'powerlineish'
+let g:airline_theme = 'raven'
 let g:airline#extensions#syntastic#enabled = 1
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
@@ -743,11 +746,40 @@ endif
 
 " NERDTREE
 let NERDTreeShowHidden = 1
+let g:NERDTreeWinPos = "right"
 nnoremap <C-e> :NERDTreeToggle<CR>
+
+" Winresizer
+let g:winresizer_start_key	= '<C-a>'
+
+" NERDCOMMENTER
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+
+" Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+
+" Align line-wise comment delimiters flush left instead of following code indentation
+let g:NERDDefaultAlign = 'left'
+
+" Set a language to use its alternate delimiters by default
+let g:NERDAltDelims_java = 1
+
+" Add your own custom formats or override the defaults
+let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
+
+" Allow commenting and inverting empty lines (useful when commenting a region)
+let g:NERDCommentEmptyLines = 1
+
+" Enable trimming of trailing whitespace when uncommenting
+let g:NERDTrimTrailingWhitespace = 1
+
+
 
 
 " EASYMOTION
 " Gif config
+map <leader>/ <Plug>(easymotion-prefix)
 map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
 
@@ -783,4 +815,8 @@ nnoremap <C-H> <C-W><C-H>
 
 set splitbelow
 set splitright
+
+
+" MISC
+map ,, <C-^>
 
