@@ -60,6 +60,8 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'arcticicestudio/nord-vim'
 Plug 'simeji/winresizer'
 Plug 'roman/golden-ratio'
+Plug 'xuhdev/SingleCompile'
+
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 else
@@ -820,3 +822,8 @@ set splitright
 " MISC
 map ,, <C-^>
 
+
+
+" FileRun
+" nmap <F9> :SCCompile<cr>
+nmap <leader>5  :SCCompileRun<cr>
