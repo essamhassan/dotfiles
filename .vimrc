@@ -194,7 +194,7 @@ let mapleader=','
 set hidden
 
 "" Searching
-set hlsearch
+" set hlsearch
 set incsearch
 set ignorecase
 set smartcase
@@ -781,6 +781,7 @@ let g:NERDTrimTrailingWhitespace = 1
 
 " EASYMOTION
 " Gif config
+set nohlsearch
 map <leader>/ <Plug>(easymotion-prefix)
 map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
