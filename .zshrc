@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/essamhassan/.oh-my-zsh
+  export ZSH=/home/essam/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -110,5 +110,5 @@ export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 
 # archey
 #neofetch
-alias config='/usr/bin/git --git-dir=/home/essamhassan/.cfg/ --work-tree=/home/essamhassan'
+alias config='/usr/bin/git --git-dir=/home/essam/.cfg/ --work-tree=/home/essam'
 neofetch
