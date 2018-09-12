@@ -228,9 +228,9 @@ bindsym $mod+r mode "resize"
 
 
 # Taking screenshots
-bindsym Print exec scrot $HOME/pictures/screenshots/`date +%Y-%m-%d_%H:%M:%S`.png
-bindsym $mod+Print exec scrot -u $HOME/pictures/screenshots/`date +%Y-%m-%d_%H:%M:%S`.png
-bindsym $mod+Shift+Print exec scrot -s $HOME/pictures/screenshots/`date +%Y-%m-%d_%H:%M:%S`.png
+bindsym Print exec scrot $HOME/Pictures/screenshots/`date +%Y-%m-%d_%H:%M:%S`.png
+bindsym $mod+Print exec scrot -u $HOME/Pictures/screenshots/`date +%Y-%m-%d_%H:%M:%S`.png
+bindsym $mod+Shift+Print exec scrot -s $HOME/Pictures/screenshots/`date +%Y-%m-%d_%H:%M:%S`.png
 
 
 # Reversed ( Natural ) scrolling
