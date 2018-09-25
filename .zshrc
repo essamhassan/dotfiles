@@ -85,11 +85,15 @@ export EDITOR='vim'
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias aur="yaourt"
 alias music="ncmpcpp"
+alias addsong="youtube-dl -c -x -f140 --add-metadata --audio-format mp3 -o ~/Music/%(title)s.%(ext)s $1"
 alias files="ranger"
+alias pdf="zathura"
+
+
 alias wifiscan="sudo iwlist wlp3s0 scan &> /dev/null"
 alias lswifi="nmcli dev wifi list"
 alias wificonnect="nmcli device wifi connect"
-alias pdf="zathura"
+
 # alias watch="mplayer"
 alias i3cheatsheet='egrep ^bind .config/i3/config | cut -d '\'' '\'' -f 2- | sed '\''s/ /\t/'\'' | column -ts $'\''\t'\'' | pr -2 -w 145 -t | less'
 
@@ -102,6 +106,8 @@ alias kstaging="kubectl --namespace=staging"
 
 source /usr/share/nvm/init-nvm.sh
 export PATH="$HOME/.rbenv/bin:$PATH"
+export GOPATH="$HOME/go"
+export PATH="$PATH:$GOPATH/bin"
 eval "$(rbenv init -)"
 export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 
